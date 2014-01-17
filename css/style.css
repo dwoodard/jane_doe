@@ -1,13 +1,48 @@
 body{
+	font-family: 'Open Sans', sans-serif;
 }
 
+#id:hover
+#id:first-child
+
 #content{}
-#nav-container{}
-#top-nav{}
+#nav-container{
+	background: #282828;
+}
+#top-nav{
+	margin:0 auto;
+	width: 300px;
+}
+#top-nav ul{
+
+}
+#top-nav ul li{
+	display: block;
+	float: left;
+}
+#top-nav ul li a{
+	color:white;
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	width: 75px;
+}
+
+#top-nav ul li a:hover{
+	background: darkgreen;
+}
+#top-nav ul li a:link{}
+#top-nav ul li a:visited{}
+#top-nav ul li a:hover{}
+#top-nav ul li a:active{}
 
 #intro{}
+.clear{clear:both;}
 #about{}
-
 .btn{
 padding: 20px;
 color: #fff;
@@ -61,4 +96,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
 	width:100px;
 	height:200px;
 	margin:0 auto;
+}
+
+/*Helpers*/
+.left{
+	float: left;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+} /* Hides from IE-mac \*/
+.clearfix {
+  display: block;
 }

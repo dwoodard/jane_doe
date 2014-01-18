@@ -1,6 +1,24 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 }
+.test{
+	content: "\f0f4";
+}
+h1{
+	font-size: 3.25em;
+	margin:0 0 0.75em 0;
+}
+h2{
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 20px
+}
+p{
+	margin-bottom: 15px;
+}
+strong{
+	font-weight: 600
+}
 
 #id:hover
 #id:first-child
@@ -8,10 +26,14 @@ body{
 #content{}
 #nav-container{
 	background: #282828;
+	position: fixed;
+	width: 100%;
 }
+
+/*TOP NAV*/
 #top-nav{
 	margin:0 auto;
-	width: 300px;
+	width: 390px;
 }
 #top-nav ul{
 
@@ -21,29 +43,72 @@ body{
 	float: left;
 }
 #top-nav ul li a{
+	border-radius: 5px;
 	color:white;
 	display: block;
 	font-size: 16px;
 	font-weight: 600;
-	height: 50px;
-	line-height: 50px;
+	height: 35px;
+	line-height: 35px;
+	margin: 8px 6px;
+	padding: 0 5px;
 	text-align: center;
 	text-decoration: none;
 	width: 75px;
+
 }
 
 #top-nav ul li a:hover{
-	background: darkgreen;
+	background: #333;
 }
+
+
 #top-nav ul li a:link{}
 #top-nav ul li a:visited{}
 #top-nav ul li a:hover{}
 #top-nav ul li a:active{}
 
-#intro{}
+
+
+/*INTRO*/
+#intro{
+	padding-top: 150px;
+}
+
+#intro p{
+	margin-bottom: 30px;
+	line-height: 35px;
+	font-size: 20px;
+	color: #666;
+}
+
+#intro p a{
+	color:#666;
+}
+#portrait-container img{
+	border-radius: 150px;
+}
+
+
+/*Work*/
+#work{
+	background: #fafafa url("img/bg.png");
+	padding-top: 70px;
+}
+
+
+#work h2{
+	text-align: center;
+	font-size: 24px;
+}
+#work .box{
+	background: blue;
+}
+
 .clear{clear:both;}
 #about{}
 .btn{
+display: inline-block;
 padding: 20px;
 color: #fff;
 text-decoration: none;
@@ -69,8 +134,6 @@ background: -o-linear-gradient(top,  #7db9e8 0%,#1e5799 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #7db9e8 0%,#1e5799 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #7db9e8 0%,#1e5799 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
-
-
 }
 
 .box_shadow {
@@ -83,19 +146,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
 	margin:0 auto;
 }
 .box{
-	color:white;
 }
-#work .box{
-	background: blue;
-	width:100px;
-	height:100px;
-	margin:0 auto;
-}
+
 #portfolio .box{
-	background: blue;
-	width:100px;
-	height:200px;
-	margin:0 auto;
 }
 
 /*Helpers*/
@@ -103,19 +156,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
 	float: left;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-.clearfix {
-  display: inline-block;
-}
-* html .clearfix {
-  height: 1%;
-} /* Hides from IE-mac \*/
-.clearfix {
-  display: block;
+.center{
+	text-align: center;
 }
